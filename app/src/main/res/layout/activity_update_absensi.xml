@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".UpdateAbsensiActivity"
+    android:background="@drawable/backgroundguru2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/trans2"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIS Siswa"
+        android:textColor="@color/Black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNis"
+        android:enabled="false"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Siswa"
+        android:textColor="@color/Black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNama"
+        android:enabled="false"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIP Guru"
+        android:textColor="@color/Black"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txt_Nip"
+        android:text="NIP Guru"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/Black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Guru"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txt_Nama"
+        android:text="nama guru"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/Black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mata Pelajaran"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txt_matapel"
+        android:text="matpel"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan"
+        android:textColor="@color/Black"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextKet"
+        android:entries="@array/list_kehadiran"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Absen"
+        android:id="@+id/buttonAbsen"
+        android:onClick="btn_absen"
+        android:background="@color/primaryTextColor"
+        android:textColor="@color/White"
+        android:layout_marginTop="40dp"/>
+    </LinearLayout>
+</LinearLayout>

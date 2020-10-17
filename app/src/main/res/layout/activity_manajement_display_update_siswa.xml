@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManajementDisplayUpdateSiswaActivity"
+    android:background="@drawable/backgroundguru2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:background="@color/trans2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIP               = "
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_nip"
+                    android:text="nip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/Black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul            = "
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul"
+                    android:textColor="@color/Black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori      = "
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="kategori"
+                    android:textColor="@color/Black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File               = "
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" File"
+                    android:textColor="@color/Black"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_buka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buka File"
+                    android:onClick="buka"
+                    android:background="@color/primaryTextColor"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIS               = "
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_nis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" NIS"
+                    android:textColor="@color/Black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama          = "
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_nama_siswa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Siswa"
+                    android:textColor="@color/Black"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_jkesimpulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesimpulan"
+                android:textColor="@color/Black"
+                />
+
+            <EditText
+                android:id="@+id/txt_kesimpulan"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:hint="Kesimpulan Praktikum"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:enabled="false"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_jscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai"
+                    android:textColor="@color/Black"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_nilai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="0-100"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Black"
+                    />
+
+                <Button
+                    android:id="@+id/buttonkirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/primaryTextColor"
+                    android:text="Kirim Tugas"
+                    android:layout_gravity="bottom|end"
+                    android:onClick="updatetugas"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

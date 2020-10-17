@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".WaliActivity"
+    android:background="@drawable/backgroundwali">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/banner5" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            style="@style/headerText"
+            android:gravity="center"
+            android:text="WALI MURID"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/White"/>
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/Wheat" />
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="ID"
+            android:textColor="@color/White"/>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Username"
+            android:textColor="@color/White"/>
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:id="@+id/login_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="MENU UTAMA"
+                android:textColor="@color/White"
+                android:textSize="16dip"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="8dp"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_labsensi"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/DeepPink"
+                    android:text="Lihat Absen Anak"
+                    android:onClick="pindah"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+
+                <Button
+                    android:id="@+id/btn_lnilai"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/primaryTextColor"
+                    android:text="Lihat Nilai Anak"
+                    android:onClick="pindah"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/primaryTextColor"
+            android:text="Logout"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

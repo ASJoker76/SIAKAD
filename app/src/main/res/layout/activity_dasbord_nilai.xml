@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DasbordNilaiSiswaActivity"
+    android:background="@drawable/backgroundguru">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_ppengetahuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Tugas"
+            android:onClick="ppengetahuan"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/ppengetahuan"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_pketerampilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Upload Tugas"
+            android:onClick="pketerampilan"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/pketerampilan"/>
+
+        <ImageButton
+            android:id="@+id/btn_psikap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Upload Tugas"
+            android:onClick="psikap"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/psikap"/>
+    </LinearLayout>
+
+</ScrollView>

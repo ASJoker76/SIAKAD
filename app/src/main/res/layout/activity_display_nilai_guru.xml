@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayNilaiGuruActivity"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundsiswa2">
+
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/AliceBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_nip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="nip"
+                android:textColor="@color/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="nama"
+                android:textColor="@color/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/txt_matpel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="matpel"
+                android:textColor="@color/primaryTextColor"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Spinner
+                android:id="@+id/txt_kategori"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:entries="@array/kategory_tugas3"
+                android:spinnerMode="dialog"
+                android:background="@color/primaryTextColor"
+                />
+
+            <Spinner
+                android:id="@+id/txt_kelas"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:entries="@array/kelas"
+                android:spinnerMode="dialog"
+                android:background="@color/primaryTextColor"
+                />
+
+            <Spinner
+                android:id="@+id/txt_jurusan"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:entries="@array/jurusan"
+                android:spinnerMode="dialog"
+                android:background="@color/primaryTextColor"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnfilter"
+                android:layout_marginLeft="10dp"
+                android:text="Urutkan"
+                android:onClick="btnurut"
+                android:background="@color/primaryTextColor"
+                android:textColor="@color/White"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnrenew"
+                android:layout_marginLeft="10dp"
+                android:text="Urutkan"
+                android:onClick="btnrenew"
+                android:background="@color/primaryTextColor"
+                android:src="@drawable/refresh"
+                android:textColor="@color/White"/>
+
+        </LinearLayout>
+    </LinearLayout>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/primaryTextColor"
+            />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManajementModulActivity"
+    android:background="@drawable/backgroundsiswa2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@color/trans2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@color/AliceBlue">
+
+        <TextView
+            android:id="@+id/txt_nip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="10pt"
+            />
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="12pt"
+            />
+        <TextView
+            android:id="@+id/txt_matpel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="10pt"
+            />
+        <TextView
+            android:id="@+id/txt_pertemuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="10pt"
+            />
+        <TextView
+            android:id="@+id/txt_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/txt_foto"
+                android:hint="Enter a Name Files"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/primaryTextColor"
+                android:textColorHint="@color/primaryTextColor"
+                android:enabled="false"/>
+
+            <ImageView
+                android:id="@+id/btn_foto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="pindah"
+                android:src="@drawable/gallery"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_video"
+                android:hint="Enter a Name Files"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/primaryTextColor"
+                android:textColorHint="@color/primaryTextColor"
+                android:enabled="false"/>
+            <ImageView
+                android:id="@+id/btn_video"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="pindah"
+                android:src="@drawable/video"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_word"
+                android:hint="Enter a Name Files"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/primaryTextColor"
+                android:textColorHint="@color/primaryTextColor"
+                android:enabled="false"/>
+
+            <ImageView
+                android:id="@+id/btn_docx"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="pindah"
+                android:src="@drawable/docx"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_pdf"
+                android:hint="Enter a Name Files"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/primaryTextColor"
+                android:textColorHint="@color/primaryTextColor"
+                android:enabled="false"/>
+
+            <ImageView
+                android:id="@+id/btn_pdf"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="pindah"
+                android:src="@drawable/pdf"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

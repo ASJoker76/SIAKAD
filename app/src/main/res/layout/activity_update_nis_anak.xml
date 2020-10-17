@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".UpdateNisAnakActivity"
+    android:background="@drawable/backgroundguru2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan NIS Siswa"
+        android:textColor="@color/primaryTextColor"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIS"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginTop="70dp"
+        />
+    <EditText
+        android:id="@+id/txt_nis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:hint="NIS"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verifikasi"
+        android:id="@+id/btn_update"
+        android:onClick="btn_update_nis"
+        android:background="@color/primaryTextColor"
+        android:textColor="@color/White"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

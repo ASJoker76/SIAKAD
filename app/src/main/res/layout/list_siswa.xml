@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:text="id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/primaryTextColor"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama           = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nama"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIS                = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_nis"
+            android:text="nis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jurusan"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_ketabsensi"
+            android:text="absen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+</LinearLayout>

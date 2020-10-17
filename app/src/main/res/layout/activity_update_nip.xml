@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".UpdateNipActivity"
+    android:background="@drawable/backgroundguru2">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Id"
+        android:textColor="@color/primaryTextColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/primaryTextColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txt_username"
+        android:text="username"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/primaryTextColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textColor="@color/primaryTextColor"
+        />
+
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:hint="Nama"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIP"
+        android:textColor="@color/primaryTextColor"
+        />
+    <EditText
+        android:id="@+id/txt_nip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:hint="NIP"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matapelajaran"
+        android:textColor="@color/primaryTextColor"
+        />
+
+    <Spinner
+        android:id="@+id/txt_matpel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/matpel"
+        android:spinnerMode="dialog"
+        android:background="@color/White"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verifikasi"
+        android:id="@+id/btn_update"
+        android:onClick="btn_update_nip"
+        android:background="@color/primaryTextColor"
+        android:textColor="@color/White"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

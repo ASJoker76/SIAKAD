@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:text="id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/primaryTextColor"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nis                       = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_nis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nis"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Siswa      = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_nama_siswa"
+            android:text="nis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nip                       = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_nip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nip"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Guru        = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_nama_guru"
+            android:text="nis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mata Pelajaran  ="
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_matapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nip"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal               = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_tgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nip"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan        = "
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/txt_ketabsen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nip"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validasi               = "
+            android:textColor="@color/primaryTextColor"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txt_validasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nip"
+            android:textColor="@color/primaryTextColor"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

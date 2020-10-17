@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeveloperActivity"
+    android:background="@color/PapayaWhip">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6"
+        android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="ID"
+            android:textColor="@color/primaryTextColor"
+            android:layout_marginRight="10px"/>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Username"
+            android:textColor="@color/primaryTextColor"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/txt_id"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_gantiwk"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:background="@color/primaryTextColor"
+            android:textColor="#fff"
+            android:text="Ganti Wali Kelas"
+            android:onClick="gantiwk"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@color/DeepPink"
+            android:text="Logout"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true" />
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black" />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

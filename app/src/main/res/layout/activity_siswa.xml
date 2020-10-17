@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SiswaActivity"
+    android:background="@drawable/backgroundsiswa">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@color/trans2">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/banner5" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            style="@style/headerText"
+            android:gravity="center"
+            android:text="SISWA"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/Black"/>
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/Red" />
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="ID"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Username"
+            android:textColor="@color/Black"/>
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:id="@+id/login_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="MENU UTAMA"
+                android:textColor="@color/Black"
+                android:textSize="16dip"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="8dp"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_labsensi"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/absen"
+                    android:text="Lihat Absensi"
+                    android:background="@color/transparent"
+                    android:textStyle="bold"
+                    android:onClick="pindah"/>
+
+                <ImageButton
+                    android:id="@+id/btn_lmatpel"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Lihat MatPel"
+                    android:textStyle="bold"
+                    android:onClick="pindah"
+                    android:src="@drawable/matpel"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="8dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_ltugas"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="pindah"
+                    android:text="Tugas"
+                    android:src="@drawable/tugas"
+                    android:textStyle="bold"
+                    android:background="@color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/btn_lnilai"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="pindah"
+                    android:text="nilai"
+                    android:textStyle="bold"
+                    android:src="@drawable/nilai"
+                    android:background="@color/transparent"/>
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@color/primaryTextColor"
+                android:text="Keluar Akun"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
